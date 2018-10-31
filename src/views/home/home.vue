@@ -50,7 +50,7 @@
           <img class="icimg"  src="../../assets/icon_01.png" >
           <div class="icon-ti">党员亮身份</div>
         </a>
-        <a >
+        <a href="/#/dsToday">
           <img  class="icimg"  src="../../assets/icon_01.png" >
           <div class="icon-ti">党史上的今天</div>
         </a>

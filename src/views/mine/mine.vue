@@ -26,17 +26,17 @@
           <img class="zhixiang"
           src="../../assets/right.png" alt="">
         </a>
-        <a href="" class="list">
+        <a href="/#/login" class="list">
           <img class="tu" src="../../assets//lxjf.png" alt=""><span class="ziti">个人量化积分</span>
           <img class="zhixiang"
           src="../../assets/right.png" alt="">
         </a>
-        <a href="" class="list">
+        <a href="/#/login" class="list">
           <img class="tu" src="../../assets/xgmm.png" alt=""><span class="ziti">修改密码</span>
           <img class="zhixiang"
           src="../../assets/right.png" alt="">
         </a>
-        <a href="" class="list">
+        <a href="/#/login" class="list">
           <img class="tu" src="../../assets/icon3.png" alt=""><span class="ziti">党费缴纳</span>
           <img class="zhixiang"
           src="../../assets/right.png" alt="">
@@ -61,12 +61,12 @@
           <img class="zhixiang"
           src="../../assets/right.png" alt="">
         </a>
-        <a href="" class="list">
+        <a href="/#/lianghua" class="list">
           <img class="tu" src="../../assets//lxjf.png" alt=""><span class="ziti">个人量化积分</span>
           <img class="zhixiang"
           src="../../assets/right.png" alt="">
         </a>
-        <a href="" class="list">
+        <a href="/#/xiugai" class="list">
           <img class="tu" src="../../assets/xgmm.png" alt=""><span class="ziti">修改密码</span>
           <img class="zhixiang"
           src="../../assets/right.png" alt="">

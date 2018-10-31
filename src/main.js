@@ -7,10 +7,16 @@ import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import $axios from './axios/axios'
 import store from './store'
+// import ScrollFlipPage from 'scroll-flip-page'
+import ScrollFlipPage from 'scroll-flip-page'
+Vue.use(ScrollFlipPage)
+
+
 
 
 Vue.prototype.$axios = $axios
 Vue.use(MintUI)
+
 
 
 
@@ -22,5 +28,6 @@ new Vue({
   router,
   store,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+
 })

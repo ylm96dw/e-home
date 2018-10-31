@@ -31,16 +31,16 @@
     </div>
 
     <div class="but" >
-      <img src="../../assets/发布btn.png" alt="" @click="submit" >
+      <img src="../../assets/发布btn.png" alt="" @click="submit" v-show="!isShow">
     </div>
     <!-- class="zhao " -->
-    <div isShow? class="zhao" : style="display : none">
+    <div class="zhao" v-show="isShow">
       <div class="area" >
         <textarea v-model="sub.content" name="" id="" cols="50" rows="8"></textarea>
       </div>
       <div class="btn ">
         <button class="btn-left" @click="fabu">发布</button>
-        <button class="btn-right" >取消</button>
+        <button class="btn-right"  @click="quxiao">取消</button>
       </div>
     </div>
 
@@ -71,7 +71,7 @@ export default {
       })
     },
     submit(){
-      this.isShow = !isShow
+      this.isShow = true
     },
     fabu(){
       this.$axios.post('/forum/saveForum.do',this.sub).then(res=>{
@@ -79,11 +79,15 @@ export default {
           console.log(res.data.content)
           // this.content = res.data.content
           this.getData()
-
+          this.isShow = false;
+          this.sub = ''
         }
 
       })
 
+    },
+    quxiao(){
+      this.isShow = false;
     }
   },
   created(){
@@ -134,7 +138,7 @@ export default {
       border:1px solid #c50206;
       border-radius: 10px;
       margin-top: 5px;
-      margin-left: 20px;
+      margin-left: 60px;
       font-size: 15px;
       text-align:center;
 
@@ -148,6 +152,7 @@ export default {
     width: 5.76rem;
     height: 0.42rem;
     margin-top:10px;
+    margin-left: 50px;
     margin-bottom: 15px;
 
     .wrap-right{

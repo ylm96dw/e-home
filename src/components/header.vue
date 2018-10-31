@@ -39,6 +39,7 @@ export default {
   .ding{
   width: 7.5rem;
   height: 0.88rem;
+  position: relative;
 }
 .top{
     background: #C50206;
@@ -56,7 +57,7 @@ export default {
       height: 0.88rem;
       margin-top: 10px;
       margin-left: 10px;
-      
+
     }
     .ft{
       font-size: 20px;

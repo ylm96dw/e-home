@@ -21,7 +21,12 @@ const components = {
   liftChoice:()=>import('@/views/lift/mzconnect/index'),//民主评议
   finddorg:()=>import('@/views/lift/team/index'),//找组织
   xinxi:()=>import('@/views/mine/xinxi/index'),
-  yunhudong:()=>import('@/views/yunhudong/index')//云互动
+  yunhudong:()=>import('@/views/yunhudong/index'),//云互动
+  edit:()=>import('@/views/mine/xinxi/edit'),//信息编辑
+  lianghua:()=>import('@/views/mine/lianghua/index'),//个人量化积分
+  mingxi:()=>import('@/views/mine/lianghua/mingxi'),//积分明细
+  xiugai:()=>import('@/views/mine/xiugai/index'),//修改密码
+  dsToday:()=>import('@/views/dsToday/dsToday'),//党史上的今天
 }
 
 Vue.use(Router)
@@ -42,8 +47,48 @@ export default new Router({
       component: components.lift,
     },
     {
+      path: '/dsToday',
+      name: 'dsToday',
+      meta:{
+        title:'党史上的今天'
+      },
+      component: components.dsToday,
+    },
+    {
+      path: '/xiugai',
+      name: 'xiugai',
+      meta:{
+        title:'修改密码'
+      },
+      component: components.xiugai,
+    },
+    {
+      path: '/mingxi',
+      name: 'mingxi',
+      meta:{
+        title:'积分明细'
+      },
+      component: components.mingxi,
+    },
+    {
+      path: '/lianghua',
+      name: 'lianghua',
+      meta:{
+        title:'个人量化积分'
+      },
+      component: components.lianghua,
+    },
+    {
+      path: '/edit',
+      name: 'edit',
+      meta:{
+        title:'修改个人信息'
+      },
+      component: components.edit,
+    },
+    {
       path: '/yunhudong',
-      name: 'lift',
+      name: 'yunhudong',
       meta:{
         title:'党员云互动'
       },
@@ -175,7 +220,7 @@ export default new Router({
       path:'/xinxi',
       name:'xinxi',
       meta:{
-        title:'xinxi'
+        title:'个人信息'
       },
       component:components.xinxi
     }

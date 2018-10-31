@@ -11,9 +11,13 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "finger-mover": "^1.4.3",
     "mint-ui": "^2.2.13",
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0",
+    "scroll-flip-page": "^1.1.1",
+    "simulation-scroll-y": "^1.4.3",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1",

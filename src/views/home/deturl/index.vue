@@ -28,7 +28,7 @@ export default {
     getData(){
       this.$axios.get(`/news/newsContent.do?newsId=${this.$route.params.url}`).then(res=>{
         this.formData = res.data
-        
+
       })
     }
   },
@@ -39,6 +39,25 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+/deep/.wrap-header{
+  font-size: 24px;
+}
+/deep/.wrap-content{
+  img{
+    display:block;
+    width: 7.1rem;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+  /deep/p{
+  line-height: 2;
+  font-size: 14px;;
+}
+}
+/deep/p{
+  line-height: 2;
+  font-size: 12px;
+}
 
 </style>
